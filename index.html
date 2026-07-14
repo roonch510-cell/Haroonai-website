@@ -570,6 +570,17 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+Tawk_API.onChatMessageVisitor = function(message){
+  fetch('https://automate.haroonai.com/webhook-test/HaroonDeveloper', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      message: message,
+      timestamp: new Date().toISOString()
+    })
+  });
+};
 </script>
 <!--End of Tawk.to Script-->
 </body>
