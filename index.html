@@ -700,7 +700,7 @@
 
 <script>
 (function () {
-  const N8N_WEBHOOK_URL = "https://automate.haroonai.com/webhook-test/HaroonDeveloper51551520";
+  const N8N_WEBHOOK_URL = "https://automate.haroonai.com/webhook/HaroonDeveloper51551520";
 
   const bubble = document.getElementById('hai-chat-bubble');
   const chatWindow = document.getElementById('hai-chat-window');
@@ -720,7 +720,7 @@
   bubble.addEventListener('click', () => {
     chatWindow.classList.toggle('open');
     if (chatWindow.classList.contains('open') && messages.children.length === 0) {
-      addMessage("Assalam-o-Alaikum! Main Haroon Digital Developer ka assistant hoon. Aapki kis tarah madad kar sakta hoon?", 'bot');
+      addMessage("Hi, I am from Haroon Digital Agency,How can I help you?", 'bot');
     }
   });
 
